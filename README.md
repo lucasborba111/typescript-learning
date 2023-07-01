@@ -3,11 +3,11 @@
 
 ⚠️ Os principais programas que executam javascript, não conseguem executar o TypeScript.
 Por isso precisamos de um compilador para o typescript. ⚠️
-> **Instalando...**
+> **Instalação...**
 ```
 npm install -g typescript
 ```
-> **Iniciando...**
+> **Iniciar...**
 ```
 tsc --init
 ```
