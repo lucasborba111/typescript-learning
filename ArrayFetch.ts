@@ -1,6 +1,5 @@
-//terminar código
 interface Curso {
-	nome: string,
+    nome: string,
     horas: number,
     aulas: number,
     gratuito: boolean,
@@ -12,7 +11,6 @@ interface Curso {
 async function fetchCursos () {
 	const resp = await fetch('https://api.origamid.dev/json/cursos.json ');
 	const data = await resp.json();
-
 	return data;
 }
 
@@ -22,8 +20,8 @@ function getColorCurso (cursos: Curso[]) {
 		if (p.nivel === 'avancado') return 'red';
 		else return null;
 	});
-
+	console.log(colorCurso);
 	return colorCurso;
 }
 
-const cursos: Promise<Curso[]> = fetchCursos().then(p => p);
+fetchCursos().then(resp => getColorCurso(resp));
