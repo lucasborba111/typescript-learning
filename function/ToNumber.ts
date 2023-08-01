@@ -6,4 +6,4 @@ function toNumber (numero: number|string) {
 
 	throw new Error('Tipagem incorreta');
 }
-console.log(toNumber(true));
+console.log(toNumber('1'));
