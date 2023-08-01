@@ -19,4 +19,15 @@ tsc --init
     "strict": true
   }
 }
-``` 
+```
+>**tsconfig.json**<br>
+> Sem o strictNullChecks como true, o TypeScript assume que qualquer valor pode incluir null | undefined e consequentemente para de checar casos onde realmente o null | undefined podem ser retornados.
+```
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "strict": true, // já incluso no strict
+    "strictNullChecks": true
+  }
+}
+```
