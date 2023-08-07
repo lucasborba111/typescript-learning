@@ -7,3 +7,4 @@ const defaultsEvents = function (event) {
         alert(event.pageX);
 };
 alertButton?.addEventListener('touchstart', defaultsEvents);
+alertButton?.addEventListener('click', defaultsEvents);

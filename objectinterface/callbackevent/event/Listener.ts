@@ -6,3 +6,4 @@ const defaultsEvents = function (event: Event) {
 }
 
 alertButton?.addEventListener('touchstart', defaultsEvents);
+alertButton?.addEventListener('click', defaultsEvents);
