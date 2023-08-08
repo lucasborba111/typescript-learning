@@ -1,4 +1,4 @@
-# Starting with Typescript
+# Starting with TypeScript
 #### Tipagem dinâmica - Superconjunto de JavaScrip ;
 
 ⚠️ Os principais programas que executam javascript, não conseguem executar o TypeScript.
